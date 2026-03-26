@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0D0D0D;
+    font-family: monospace;
+    color: #EBEFF2;
+    margin: 0.7rem;
+}
+/* Topo */
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    padding-bottom: 1rem;
+}
+
+.actions {
+    margin-left: auto;
+}
+
+#search {
+    border: #444 0.1rem solid;
+    border-radius: 0.3rem;
+    background: #1a1a1a;
+    color: white;
+
+    padding: .5rem;
+    width: 25rem;
+    height: 2rem;
+}
+
+#logo {
+    padding-right: 1.0rem;
+}
+
+/* Barra de Navegação */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: white 0.1rem solid;
+    border-top: white 0.1rem solid;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+/* Banner */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.0rem;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    width: 250px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #1a1a1a;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    margin: 1rem 0 1rem 0;
+}
+
+.info button {
+    background: transparent;
+    color: #EBEFF2;
+    border: 1px solid #555;
+    padding: 8px 16px;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.info img {
+    width: 25px;
+    height: auto;
+}
+
+.info button:hover {
+    background-color: white;
+    color: black;
+}
+
+h2{
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.main-barnners {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cards-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.card_deitado {
+    display: flex;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 60px;
+}
+
+.card_deitado img {
+    width: 180px;
+    object-fit: cover;
+}
+
+.card_deitado h3 {
+    text-align: right;
+}
+
+.text-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .main-barnners{
+        flex-direction: column;
+        gap: .25rem;
+    }
+    .cards {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .popular{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pesquisar#search{
+        padding: 1rem;
+    }
+    #search{
+        margin-top: .5rem;
+        width: 20rem;
+    }
+    .actions{
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+    }
+
+    h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
