@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background: #0D0D0D;
     font-family: monospace;
@@ -21,6 +22,10 @@ body {
 
 .actions {
     margin-left: auto;
+}
+
+.actions :hover {
+    transform: scale(1.1);
 }
 
 #search {
@@ -73,7 +78,7 @@ body {
     border-radius: 1.0rem;
 }
 
-/* CARDS */
+/* Cards */
 
 .cards {
     display: flex;
@@ -104,7 +109,7 @@ body {
 }
 
 .info h3 {
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0rem;
 }
 
 .info button {
@@ -114,10 +119,6 @@ body {
     padding: 8px 16px;
     border-radius: 0.3rem;
     cursor: pointer;
-}
-
-a{
-    text-decoration: none;
 }
 
 .info img {
@@ -130,9 +131,13 @@ a{
     color: black;
 }
 
-h2{
-    margin: 1.5rem 0 1.5rem 0;
+/* Geral */
+
+.geral h2{
+    margin: 1.0rem 0rem;
 }
+
+/* Cards Deitados */
 
 .main-barnners {
     display: flex;
@@ -152,11 +157,18 @@ h2{
     background-color: #1a1a1a;
     width: 100%;
     height: 60px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card_deitado:hover {
+    transform: scale(1.05);
 }
 
 .card_deitado img {
     width: 180px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .card_deitado h3 {
@@ -170,50 +182,65 @@ h2{
     padding-left: 1rem;
 }
 
-@media (max-width: 768px) {
-    .main-barnners{
-        flex-direction: column;
-        gap: .25rem;
-    }
-    .cards {
-        flex-wrap: wrap;
-        margin: 0 auto;
-        justify-content: center;
-    }
-    .popular{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
+/* Desenvolvedoras */
 
-    .navbar{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .pesquisar#search{
-        padding: 1rem;
-    }
-    #search{
-        margin-top: .5rem;
-        width: 20rem;
-    }
-    .actions{
-        justify-content: center;
-        align-items: center;
-        margin: 1rem auto;
-    }
-
-    h2{
-        text-align: center;
-    }
+.desenvolvedoras {
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 50px;
 }
 
-@media (max-width: 480px) {
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.desenvolvedoras img {
+    width: 144px;
+    height: 144px;
+    border-radius: 100px;
+}
+
+/* rodapé */
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    padding: 4rem 3rem;
+    background-color: #121212;
+    border-top: 2px solid white;
+}
+
+.topicos {
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.topicos h3 {
+    color: yellow;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.topicos p {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.rodape a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: 0.3s;
+}
+
+#ultimo {
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    color: #666;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    margin-top: 2rem;
 }

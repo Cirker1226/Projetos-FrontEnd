@@ -1,0 +1,66 @@
+@media (max-width: 768px) {
+    .main-barnners{
+        flex-direction: column;
+        gap: .25rem;
+    }
+    .cards {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .popular{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pesquisar#search{
+        padding: 1rem;
+    }
+    #search{
+        margin-top: .5rem;
+        width: 20rem;
+    }
+    .actions{
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .desenvolvedoras {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .desenvolvedoras img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .rodape {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .topicos {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
