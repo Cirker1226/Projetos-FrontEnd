@@ -72,4 +72,4 @@ git clone https://github.com/Cirker1226/Projetos-FrontEnd
 ```
 ## 🧑‍💻 Autor
 
-Desenvolvido por **Matheus Henrique** para fins Educacionais 🚀
+Desenvolvido por **Matheus Henrique** para fins educacionais 🚀

@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: #e2e8f0 1px solid;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #64748b;
+}
+
+.navbar a:hover {
+  color: #0f172a;
+}
+
+.btn-inicio {
+    background: #dc2626;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-inicio:hover {
+    background: #d81010;
+    transform: scale(1.03);
+}
+
+#logo {
+    width: auto;
+    height: 3.4rem;
+}
+
+/* Informações */
+
+.info {
+    padding: 3rem 2.3rem;
+}
+
+.info-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.info-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 14px;
+    font-size: 12px;
+    gap: 5px;
+    color: #d81010;
+    background: #e2e8f0;
+    border-radius: 1000px;
+    border: 0.5px solid #ffb4b4;
+    margin-bottom: 10px;
+}
+
+.info-ponto {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #dc2626;
+}
+
+.info-txt h1 {
+    color: #0f172a;
+    font-size: 65px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.info-txt span {
+    color: #dc2626;
+}
+
+.info-txt {
+    font-size: 18px;
+    color: #475569;
+    max-width: 600px;
+}
+
+.info-img img {
+    height: 500px;
+    width: auto;
+    border-radius: 10%;
+    margin-top: -2rem;
+}
+
+.info-buttons {
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+}
+
+.btn-primary {
+    background: #dc2626;
+    color: #ffffff;
+    padding: 13px 28px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #d81010;
+    transform: scale(1.03);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #e2e8f0;
+    padding: 13px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #e2e8f0;
+    transform: scale(1.03);
+}
+
+/* Stats Parte */
+
+.stats-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 80px;
+    border-top: 0.5px solid #e2e8f0;
+    border-bottom: 0.5px solid #e2e8f0;
+    background: #f8fafc;
+    flex-wrap: wrap;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 48px;
+}
+
+.stats-numero {
+    font-size: 28px;
+    color: #dc2626;
+}
+
+.stats-text {
+    font-size: 15px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.divisoria-stats {
+    width: 1px;
+    height: 60px;
+    background: #e2e8f0;
+}
+
+/* Funcionalidades Parte */
+
+.funcionalidades {
+    padding: 5rem 2.3rem;
+}
+
+.funcionalidades-titulo h1 {
+    font-size: 16px;
+    color: #dc2626;
+    letter-spacing: 2.0px;
+    text-transform: uppercase;
+    padding-bottom: 0.8rem;
+}
+
+.funcionalidades-titulo p {
+    font-size: 25px;
+    color: #0f172a;
+    padding-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    padding-bottom: 1.2rem;
+    gap: 30px;
+}
+
+.card-group {
+    background: #f8fafc;
+    border: 0.5px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 28px 24px;
+    width: 25rem;
+}
+
+.card-group:hover {
+    border-color: #fca5a5;
+}
+
+.card-group h3 {
+  font-size: 15px;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.card-group p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: auto;
+    background: #fef2f2;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.card-img img {
+    width: 30px;
+    height: auto;
+}
+
+/* Rodapé */
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 80px;
+  border-top: 0.5px solid #e2e8f0;
+  color: #64748b;
+  gap: 12px;
+}
+
+.rodape-links {
+  display: flex;
+  gap: 24px;
+}
+
+.rodape-links a {
+  font-size: 13px;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.rodape-links a:hover {
+  color: #0f172a;
+}
