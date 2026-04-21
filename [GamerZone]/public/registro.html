@@ -4,30 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GANER ZONE - Pagina de Login</title>
+    <title>Pagina de Registro</title>
 
-    <link rel="stylesheet" href="css/style_login.css">
+    <link rel="stylesheet" href="css/style_registro.css">
 </head>
 
 <body>
     <main class="container">
-        <a href="index.html"><img id="voltar" src="img/seta_invertida.png" alt="voltar"></a>
         <div class="lado_esquerdo">
+            <img src="img/registro.png" alt="registro">
+        </div>
+
+        <a href="index.html"><img id="voltar" src="img/seta_invertida.png" alt="voltar"></a>
+        <div class="lado_direito">
             <img id="logo" src="img/logo.png" alt="logo">
             <form class="formulario">
                 <label for="email">Email:</label>
                 <input type="email" id="email">
 
+                <label for="email">Telefone:</label>
+                <input type="number" id="numero">
+
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha">
 
-                <button type="entrar">ENTRAR</button>
-                <p>Não possui conta? <a href="registro.html">Registre-se</a></p>
+                <button type="entrar">REGISTRAR</button>
+                <p>Já se registrou? <a href="login.html">Logar-se</a></p>
             </form>
-        </div>
-
-        <div class="lado_direito">
-            <img src="img/login.png" alt="login">
         </div>
     </main>
 </body>

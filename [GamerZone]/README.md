@@ -56,10 +56,6 @@ Este projeto foi desenvolvido com o objetivo de:
 * Melhorar a organização de código front-end
 * Criar um projeto para portfólio
 
-## 🧑‍💻 Autor
-
-Desenvolvido por **Matheus Henrique** para fins Educacionais 🚀
-
 ## 🔗 Acesse o projeto
 
 Você pode visualizar o projeto através do GitHub:
@@ -74,3 +70,6 @@ Você pode visualizar o projeto através do GitHub:
 git clone https://github.com/Cirker1226/Projetos-FrontEnd
 
 ```
+## 🧑‍💻 Autor
+
+Desenvolvido por **Matheus Henrique** para fins Educacionais 🚀
