@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+/* ===== LADO ESQUERDO ===== */
+
+.lado-esquerdo {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 1.5rem 2.5rem 3rem;
+}
+
+#logo {
+    width: auto;
+    height: 3.4rem;
+}
+
+.info {
+    margin-top: 72px;
+}
+
+.info h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    color: #ffffff;
+    line-height: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.info h1 span {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 36px;
+}
+
+.info-txt {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    line-height: 1.75;
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+
+.cards {
+    margin-top: 0.5rem;
+}
+
+.card-group {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin: 0.6rem 0;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.92);
+    font-size: 20px;
+}
+
+.card-info {
+    padding-left: 14px;
+}
+
+.card-info h3 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.card-info p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.card-txt {
+    margin-left: auto;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/* ===== LADO DIREITO ===== */
+
+.lado-direito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Geral */
+
+.form {
+    width: 60vh;
+}
+
+.form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Cabeçalho */
+
+.form-head {
+    margin-bottom: 20px;
+}
+
+.barras {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.barra-on {
+    width: 28px;
+    height: 4px;
+    border-radius: 2px;
+    background: #E8192C;
+}
+
+.barra-off {
+    width: 28px;
+    height: 4px;
+    border-radius: 2px;
+    background: #e5e7eb;
+}
+
+/* Botão Google */
+
+.form-rapido img {
+    width: 15px;
+    height: auto;
+}
+
+.form-rapido button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 12px;
+    background: #ffffff;
+    font-size: 14px;
+    color: #111827;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.form-separar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+.barra {
+    flex: 1;
+    height: 1px;
+    background: #9ca3af;
+}
+
+/* Formulário */
+
+.form-pessoal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.form-pessoal input,.form-info input {
+    width: 100%;
+    padding: 10px 13px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #111827;
+    background: #ffffff;
+    outline: none;
+}
+
+.form-info div {
+    margin-bottom: 14px;
+}
+
+/* Termos */
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 18px 0;
+}
+
+.terms input{
+    width: 15px;
+    height: 15px;
+    margin-top: 1px;
+    flex-shrink: 0;
+    accent-color: #E8192C;
+}
+
+.terms label {
+    font-size: 12px;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.terms a {
+    color: #E8192C;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Parte de Confirmar */
+
+.submit button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #E8192C;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit button:hover {
+    transform: scale(1.02);
+    background: #d40000;
+}
+
+.submit p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.submit a {
+    color: #E8192C;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.submit a:hover {
+    color: #d40000;
+    text-decoration:underline;
+}
