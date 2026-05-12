@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognix - Home</title>
+
+    <link rel="stylesheet" href="css/style_home.css">
+</head>
+<body>
+    <main class=container>
+        <nav class="menu-lateral">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo calculaDOR">
+            </div>
+
+            <div class="opcoes">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Calendario</li></a>
+                    <a href="#"><li>Conteudos</li></a>
+                    <a href="#"><li>Questões</li></a>
+                    <a href="#"><li>Redação</li></a>
+                    <a href="#"><li>Ranking</li></a>
+                    <a href="#"><li>Comunidade</li></a>
+                </ul>
+            </div>
+
+            <div class="menu-baixo">
+                <div class="perfil">
+                    <img src="img/perfil.png" alt="foto de perfil">
+                    <div class="perfil-txt">
+                        <p>Matheus</p>
+                        <span>Adiministrador</span>
+                    </div>
+                </div>
+                <div class="config">
+                    <img id="config" src="img/config.png" alt="configurações">
+                </div>
+            </div>
+        </nav>
+
+        <section class="lado-direito">
+            <div class="banner">
+                <img src="img/banner3.png" alt="banner cognix">
+            </div>
+
+            <div class="cal" id="cal">
+                <div class="cal-header">
+                    <button class="cal-nav" id="cprev">&#8249;</button>
+                    <span class="cal-title" id="ctitle"></span>
+                    <button class="cal-nav" id="cnext">&#8250;</button>
+                </div>
+
+                <div class="cal-days">
+                    <div class="cal-day-label">D</div>
+                    <div class="cal-day-label">S</div>
+                    <div class="cal-day-label">T</div>
+                    <div class="cal-day-label">Q</div>
+                    <div class="cal-day-label">Q</div>
+                    <div class="cal-day-label">S</div>
+                    <div class="cal-day-label">S</div>
+                </div>
+
+                <div class="cal-cells" id="ccells"></div>
+                <div class="cal-footer">
+                    <div class="cal-footer-title">Próximos eventos</div>
+                    <div id="cevents"></div>
+                </div>
+                </div>
+        </section>
+    </main>
+</body>
+    <script src="js/calendario.js"></script>
+</html>
